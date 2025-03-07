@@ -10,40 +10,21 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  max-width: 550px;
+  border-radius: 10px;
 }
  body {
     background-color: #151c28;
+    font-family: sans-serif;
+     margin: 0;
+     padding: 0;
+     text-align: center;
  }
- p {
+ h1, h2, h3, h4, h5, p, li {
    color: #d7f300 ;
-   text-align-last: center;
-   font-family: sans-serif;
+   
  }
- h1 {
-  color: #d7f300 ;
-  text-align: center;
-  font-family: monospace ;
- }
- li {
-  color: #d7f300;
- }
- div {
-  background-color:  #d7f300;
-  color: #151c28;
-  padding: -13px;
-  text-align: center;
-  border-radius: 25px;
- }
- h4 {
-  color: #d7f300;
-  font-family: sans-serif;
-  text-align: center;
- }
- h2 {
-  color: #151c28; ;
-  text-align: center;
-  font-family: sans-serif;
- }
+      
  div {
   background-color:  #d7f300;
   color: #151c28;
@@ -52,14 +33,66 @@
   border-radius: 25px;
  }
  
- h5 {
-  color: #d7f300;
+ div {
+  background-color:  #d7f300;
+  color: #151c28;
+  padding: -13px;
   text-align: center;
-  font-size: x-large;
-     }
+  border-radius: 25px;
+ }
+ 
+      .container {
+          max-width: 900px;
+          margin: auto;
+          padding: 20px;
+      }
+
+      .tabs {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin-bottom: 20px;
+      }
+
+      .tabs div {
+          background-color: #d7f300;
+          color: #151c28;
+          padding: 10px 15px;
+          border-radius: 25px;
+          transition: transform 0.3s ease;
+         }
+      
+      .tabs div:hover {
+          transform: scale(1.1);
+      }
+
+      .images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 20px;
+      }
+
+      .images img {
+          height: 150px;
+          border-radius: 10px;
+          transition: transform 0.3s ease;
+         }
+
+       .images img:hover {
+          transform: scale(1.1);
+      }
+
+       @media (max-width: 600px) {
+          .tabs {
+              flex-direction: column;
+              align-items: center;
+          }
     </style>
     
-   
+    <div class="container">
     <h1> Zenless Zone Zero </h1>
     <div class="Tabs">
     <div><h4><a href="index.html">Background!</a></h4></div>
@@ -93,7 +126,7 @@
     </div>
     <p> Playable Agents!</p>
     <h5> 5 Star-Characters</h5>
-
+     <div class="image">
     <img src=" https://i.pinimg.com/474x/7b/12/d0/7b12d060254b492c41564e307309abcc.jpg" height="150"> 
 
     <img src="https://i.pinimg.com/enabled_hi/474x/3b/a6/36/3ba636792b77e7a5e6a846fe6d180bcb.jpg " height="150"> 
@@ -117,10 +150,10 @@
     <img src="https://i.pinimg.com/474x/64/7b/7b/647b7b6c8920b5d7f09dbc5459c85953.jpg " height="150">
 
     <img src="https://i.pinimg.com/474x/e4/bf/81/e4bf815ceaa427f2e5841502fa607a70.jpg " height="150"> 
-
+     </div>
 
    <h5> 4 Star-Characters</h5>
-
+    <div class="image">
    <img src=" https://i.pinimg.com/enabled_hi/474x/ce/58/03/ce5803abb1f329e0d29eb553f8d321bb.jpg" height="150">
 
    <img src=" https://i.pinimg.com/474x/0b/88/8e/0b888eef8a09371407df4338bf17ec43.jpg" height="150">
@@ -140,6 +173,6 @@
    <img src=" https://i.pinimg.com/474x/4d/30/22/4d3022547c316afdc470647d8345c9fa.jpg" height="150">
 
    <img src=" https://i.pinimg.com/474x/12/f8/6b/12f86b0dae2f73f4281202c3a1fc3a0d.jpg" height="150">
-  
+    </div>
   </head>
 </body>
